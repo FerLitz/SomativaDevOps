@@ -13,7 +13,7 @@ only:
   
 script:
   - docker pull ferlitz/teste
-  - docker run -v $PWD/:/app/report/ferlitz/teste
+  - docker run -v $PWD/:/app/report/ ferlitz/teste
 
 # after_script:
 #   - bash ./telegram_notification.sh
