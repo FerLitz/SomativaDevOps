@@ -12,7 +12,7 @@ only:
   - test-ci
   
 script:
-  - docker pull docker push ferlitz/teste
+  - docker pull ferlitz/teste
   - docker run -v $PWD/:/app/report/ docker push ferlitz/teste
 
 # after_script:
