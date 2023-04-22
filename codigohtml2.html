@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sua idade</title>
+</head>
+<body>
+    <h1>Insira o ano de seu nascimento:</h1>
+    <input type="text" id="anoInput">
+    <button onclick="mostrarIdade()">Mostrar Idade</button>
+    <p id="idade"></p>
+
+    <script>
+        function mostrarIdade() {
+            var ano = document.getElementById('anoInput').value;
+            var idade = "Este ano voce fez ou fara: " + (2023 -ano) + " anos!";
+            document.getElementById('idade').textContent = idade;
+        }
+    </script>
+</body>
+</html>
